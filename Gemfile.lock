@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/waselchat/azure-storage-ruby
+  remote: https://github.com/bahaou/azure-storage-ruby
   revision: 9957cf899d33a285b5dfe15bdb875292398e392b
   branch: waselchat
   specs:
@@ -14,7 +14,7 @@ GIT
       nokogiri (~> 1, >= 1.10.8)
 
 GIT
-  remote: https://github.com/waselchat/devise-secure_password
+  remote: https://github.com/bahaou/devise-secure_password
   revision: adcc85fe1babfe40feae73dbcae64d14fff86e69
   branch: waselchat
   specs:
@@ -23,7 +23,7 @@ GIT
       railties (>= 5.0.0, < 8.0.0)
 
 GIT
-  remote: https://github.com/waselchat/html2text_ruby
+  remote: https://github.com/bahaou/html2text_ruby
   revision: cdbdbbbf898d846d0136d69d688a003c6b26074b
   branch: waselchat
   specs:
