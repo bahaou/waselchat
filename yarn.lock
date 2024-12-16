@@ -2907,7 +2907,7 @@
 
 "@waselchat/ninja-keys@1.2.3":
   version "1.2.3"
-  resolved "https://registry.yarnpkg.com/@waselchat/ninja-keys/-/ninja-keys-1.2.3.tgz#3c3f2b505f091ef4707fd1da39bb2ec6d12e7824"
+  resolved "https://registry.yarnpkg.com/@chatwoot/ninja-keys/-/ninja-keys-1.2.3.tgz#3c3f2b505f091ef4707fd1da39bb2ec6d12e7824"
   integrity sha512-xM8d9P5ikDMZm2WbaCTk/TW5HFauylrU3cJ75fq5je6ixKwyhl/0kZbVN/vbbZN4+AUX/OaSIn6IJbtCgIF67g==
   dependencies:
     "@material/mwc-icon" "0.25.3"
@@ -2916,7 +2916,7 @@
 
 "@waselchat/prosemirror-schema@1.0.11":
   version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@waselchat/prosemirror-schema/-/prosemirror-schema-1.0.11.tgz#b66201be8b09cd4c6370a60607cc5d4f9d924bdb"
+  resolved "https://registry.yarnpkg.com/@chatwoot/prosemirror-schema/-/prosemirror-schema-1.0.11.tgz#b66201be8b09cd4c6370a60607cc5d4f9d924bdb"
   integrity sha512-OAUa1CuHtetEPh/ZhRkMLVQHY2/eesCRb2IRdVzjh0z+4spp3fG826y8FbOEsa7m4hisNirnGF/mDH+NMmYetw==
   dependencies:
     markdown-it-sup "^1.0.0"
@@ -2937,7 +2937,7 @@
 
 "@waselchat/utils@^0.0.25":
   version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@waselchat/utils/-/utils-0.0.25.tgz#7657286baa1ef833789f934991df63c4a9716595"
+  resolved "https://registry.yarnpkg.com/@chatwoot/utils/-/utils-0.0.25.tgz#7657286baa1ef833789f934991df63c4a9716595"
   integrity sha512-2bGfRewHu0Bra47vHwJa3SdZ0VqXK/2q2ampcc6TT3z8ojSfZqpfMdb+1RKJ/Q1tQEYn/0rJTdWtLDRjePF92A==
   dependencies:
     date-fns "^2.29.1"
