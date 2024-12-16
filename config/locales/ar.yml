@@ -1,0 +1,290 @@
+#Files in the config/locales directory are used for internationalization
+#and are automatically loaded by Rails. If you want to use locales other
+#than English, add the necessary files in this directory.
+#To use the locales, use `I18n.t`:
+#I18n.t 'hello'
+#In views, this is aliased to just `t`:
+#<%= t('hello') %>
+#To use a different locale, set it with `I18n.locale`:
+#I18n.locale = :es
+#This would use the information in config/locales/es.yml.
+#The following keys must be escaped otherwise they will not be retrieved by
+#the default I18n backend:
+#true, false, on, off, yes, no
+#Instead, surround them with single quotes.
+#en:
+#'true': 'foo'
+#To learn more, please read the Rails Internationalization guide
+#available at https://guides.rubyonrails.org/i18n.html.
+ar:
+  hello: "مرحباً بالعالم"
+  messages:
+    reset_password_success: تم إرسال طلب إعادة تعيين كلمة المرور. يرجى مراجعة بريدك الإلكتروني للحصول على التعليمات.
+    reset_password_failure: أوه! لم نتمكن من العثور على أي مستخدم بعنوان البريد الإلكتروني المحدد.
+    inbox_deletetion_response: سيتم معالجة طلب حذف صندوق الوارد الخاص بك في بعض الوقت.
+  errors:
+    validations:
+      presence: يجب ألا يكون فارغاً
+    webhook:
+      invalid: أحداث غير صالحة
+    signup:
+      disposable_email: نحن لا نسمح باسخدام عناوين البريد الإلكتروني المؤقتة
+      invalid_email: لقد قمت بإدخال عنوان بريد إلكتروني غير صالح
+      email_already_exists: "لقد قمت بالفعل بتسجيل حساب سابقاً بالعنوان %{email}"
+      invalid_params: 'غير صالح، الرجاء التحقق من خانات التسجيل وحاول مرة أخرى'
+      failed: فشلت عملية التسجيل
+    data_import:
+      data_type:
+        invalid: نوع البيانات غير صالح
+    contacts:
+      import:
+        failed: الملف فارغ
+      export:
+        success: سنقوم بإعلامك بمجرد أن يكون ملف تصدير جهات الاتصال جاهزاً للعرض.
+      email:
+        invalid: إيميل غير صالح
+      phone_number:
+        invalid: يجب أن يكون بصيغة e164
+    categories:
+      locale:
+        unique: يجب أن تكون فريدة من نوعها في الفئة والبوابة
+    dyte:
+      invalid_message_type: "نوع الرسالة غير صالح. الإجراء غير مسموح به"
+    slack:
+      invalid_channel_id: "قناة Slack غير صحيحة. الرجاء المحاولة مرة أخرى"
+    inboxes:
+      imap:
+        socket_error: الرجاء التحقق من اتصال الشبكة، عنوان IMAP وحاول مرة أخرى.
+        no_response_error: الرجاء التحقق من بيانات اعتماد IMAP وحاول مرة أخرى.
+        host_unreachable_error: المضيف لا يمكن الوصول إليه، الرجاء التحقق من عنوان IMAP، منفذ IMAP وحاول مرة أخرى.
+        connection_timed_out_error: انتهت مهلة الاتصال لـ %{address}:%{port}
+        connection_closed_error: تم إغلاق الاتصال.
+      validations:
+        name: لا ينبغي أن تبدأ أو تنتهي بالرموز، ولا ينبغي أن يكون أقل من > / \ أحرف @ .
+    custom_filters:
+      number_of_records: تم الوصول إلى الحد الأقصى. الحد الأقصى لعدد الفلاتر المخصصة المسموح به للمستخدم لكل حساب هو 50.
+      invalid_attribute: مفتاح السمة غير صالح - [%{key}]. يجب أن يكون المفتاح واحد من [%{allowed_keys}] أو سمة مخصصة محددة في الحساب.
+      invalid_operator: مشغل غير صالح. المشغل المسموح به لـ %{attribute_name} هو [%{allowed_keys}].
+      invalid_value: قيمة غير صالحة. القيم المقدمة ل %{attribute_name} غير صالحة
+  reports:
+    period: فترة التبليغ %{since} إلى %{until}
+    utc_warning: التقرير الذي تم إنشاؤه في التوقيت العالمي الموحّد
+    agent_csv:
+      agent_name: اسم الوكيل
+      conversations_count: المحادثات المعينة
+      avg_first_response_time: متوسط وقت الاستجابة الأولى
+      avg_resolution_time: متوسط وقت الحل
+      resolution_count: عدد مرات الإغلاق
+      avg_customer_waiting_time: متوسط وقت انتظار العميل
+    inbox_csv:
+      inbox_name: اسم صندوق الوارد
+      inbox_type: نوع صندوق البريد
+      conversations_count: عدد المحادثات
+      avg_first_response_time: متوسط وقت الإستجابة الأولى
+      avg_resolution_time: متوسط وقت الحل
+    label_csv:
+      label_title: الوسم
+      conversations_count: عدد المحادثات
+      avg_first_response_time: متوسط وقت الإستجابة الأولى
+      avg_resolution_time: متوسط وقت الحل
+    team_csv:
+      team_name: اسم الفريق
+      conversations_count: عدد المحادثات
+      avg_first_response_time: متوسط وقت الإستجابة الأولى
+      avg_resolution_time: متوسط وقت الحل
+      resolution_count: عدد مرات الإغلاق
+      avg_customer_waiting_time: متوسط وقت انتظار العميل
+    conversation_traffic_csv:
+      timezone: منطقة زمنية
+    sla_csv:
+      conversation_id: معرف المحادثة
+      sla_policy_breached: سياسة مستوى الخدمة
+      assignee: المكلَّف
+      team: الفريق
+      inbox: صندوق الوارد
+      labels: الوسوم
+      conversation_link: Link to the Conversation
+      breached_events: Breached Events
+    default_group_by: اليوم
+    csat:
+      headers:
+        contact_name: اسم جهة الاتصال
+        contact_email_address: عنوان البريد الإلكتروني الخاص بجهة الاتصال
+        contact_phone_number: رقم هاتف جهة الاتصال
+        link_to_the_conversation: رابط إلى المحادثة
+        agent_name: اسم الموظف
+        rating: التقييم
+        feedback: التعليق على الملاحظات
+        recorded_at: تاريخ التسجيل
+  notifications:
+    notification_title:
+      conversation_creation: "تم إنشاء محادثة (#%{display_id}) في %{inbox_name}"
+      conversation_assignment: "تم تعيين محادثة (#%{display_id}) لك"
+      assigned_conversation_new_message: "تم إنشاء رسالة جديدة في المحادثة (#%{display_id})"
+      conversation_mention: "تمت الإشارة إليك في المحادثة من قبل (#%{display_id})"
+      sla_missed_first_response: "هدف SLA أول رد مفقود للمحادثة (#%{display_id})"
+      sla_missed_next_response: "SLA target next response missed for conversation (#%{display_id})"
+      sla_missed_resolution: "SLA target resolution missed for conversation (#%{display_id})"
+    attachment: "Attachment"
+    no_content: "لا يوجد محتوى"
+  conversations:
+    messages:
+      instagram_story_content: "أشار %{story_sender} إليك في القصة: "
+      instagram_deleted_story_content: هذه القصة لم تعد متاحة.
+      deleted: تم حذف هذه الرسالة
+      delivery_status:
+        error_code: "رمز الخطأ: %{error_code}"
+    activity:
+      status:
+        resolved: "تم تحديث حالة المحادثة لـ\"مغلقة\" بواسطة %{user_name}"
+        contact_resolved: "تم حل المحادثة بواسطة %{contact_name}"
+        open: "تم إعادة فتح المحادثة بواسطة %{user_name}"
+        pending: "تم تحديث حالة المحادثة لـ\"معلقة\" بواسطة %{user_name}"
+        snoozed: "تم تأجيل المحادثة بواسطة %{user_name}"
+        auto_resolved: "تم وضع علامة على المحادثة كمحلولة من قبل بالنظام بسبب %{duration} أيام من عدم النشاط"
+        system_auto_open: أعاد النظام فتح المحادثة بسبب رسالة واردة جديدة.
+      priority:
+        added: '%{user_name} حدد الأولوية إلى %{new_priority}'
+        updated: '%{user_name} غيّر الأولوية من %{old_priority} إلى %{new_priority}'
+        removed: '%{user_name} أزال الأولوية'
+      assignee:
+        self_assigned: "%{user_name} تم تعيينه تلقائياً لهذه المحادثة"
+        assigned: "تم إسنادها إلى %{assignee_name} بواسطة %{user_name}"
+        removed: "المحادثة غير مسندة بواسطة %{user_name}"
+      team:
+        assigned: "تم إسنادها إلى %{team_name} بواسطة %{user_name}"
+        assigned_with_assignee: "تم تعيينه إلى %{assignee_name} عبر %{team_name} بواسطة %{user_name}"
+        removed: "إلغاء التعيين من %{team_name} بواسطة %{user_name}"
+      labels:
+        added: "%{user_name} أضاف %{labels}"
+        removed: "%{user_name} أزال %{labels}"
+      sla:
+        added: "%{user_name} أضاف سياسة مستوى الخدمة %{sla_name}"
+        removed: "%{user_name} أزال سياسة مستوى الخدمة %{sla_name}"
+      muted: "%{user_name} كتم صوت المحادثة"
+      unmuted: "%{user_name} قام بإلغاء كتم المحادثة"
+    templates:
+      greeting_message_body: "%{account_name} يرد عادة خلال بضع ساعات."
+      ways_to_reach_you_message_body: "زودنا بوسيلة للتواصل معك."
+      email_input_box_message_body: "احصل على الإشعارات في البريد الإلكتروني"
+      csat_input_message_body: "الرجاء تقييم المحادثة"
+    reply:
+      email:
+        header:
+          from_with_name: "%{assignee_name} من %{inbox_name} <%{from_email}>"
+          reply_with_name: "%{assignee_name} من %{inbox_name} <%{reply_email}>"
+          friendly_name: "%{sender_name} من %{business_name} <%{from_email}>"
+          professional_name: "%{business_name} <%{from_email}>"
+      channel_email:
+        header:
+          reply_with_name: "%{assignee_name} من %{inbox_name} <%{from_email}>"
+          reply_with_inbox_name: "%{inbox_name} <%{from_email}>"
+      email_subject: "رسائل جديدة في هذه المحادثة"
+      transcript_subject: "نص المحادثة"
+    survey:
+      response: "الرجاء تقييم هذه المحادثة، %{link}"
+  contacts:
+    online:
+      delete: "%{contact_name} متصل، يرجى المحاولة مرة أخرى لاحقاً"
+  integration_apps:
+    dashboard_apps:
+      name: "تطبيقات لوحة التحكم"
+      description: "Dashboard Apps allow you to create and embed applications that display user information, orders, or payment history, providing more context to your customer support agents."
+    dyte:
+      name: "Dyte"
+      description: "Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from Waselchat."
+      meeting_name: "%{agent_name} has started a meeting"
+    slack:
+      name: "Slack"
+      description: "Integrate Waselchat with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
+    webhooks:
+      name: "Webhook"
+      description: "Webhook events provide real-time updates about activities in your Waselchat account. You can subscribe to your preferred events, and Waselchat will send you HTTP callbacks with the updates."
+    dialogflow:
+      name: "Dialogflow"
+      description: "Build chatbots with Dialogflow and easily integrate them into your inbox. These bots can handle initial queries before transferring them to a customer service agent."
+    google_translate:
+      name: "ترجمة Google"
+      description: "Integrate Google Translate to help agents easily translate customer messages. This integration automatically detects the language and converts it to the agent's or admin's preferred language."
+    openai:
+      name: "OpenAI"
+      description: "Leverage the power of large language models from OpenAI with the features such as reply suggestions, summarization, message rephrasing, spell-checking, and label classification."
+    linear:
+      name: "Linear"
+      description: "Create issues in Linear directly from your conversation window. Alternatively, link existing Linear issues for a more streamlined and efficient issue tracking process."
+    captain:
+      name: "Captain"
+      description: "Captain is a native AI assistant built for your product and trained on your company's knowledge base. It responds like a human and resolves customer queries effectively. Configure it to your inboxes easily."
+  public_portal:
+    search:
+      search_placeholder: Search for article by title or body...
+      empty_placeholder: لم يتم العثور على النتائج.
+      loading_placeholder: يبحث...
+      results_title: نتائج البحث
+    toc_header: 'On this page'
+    hero:
+      sub_title: Search for the articles here or browse the categories below.
+    common:
+      home: الرئيسية
+      last_updated_on: Last updated on %{last_updated_on}
+      view_all_articles: عرض الكل
+      article: مقال
+      articles: المقالات
+      author: المؤلف
+      authors: المؤلفون
+      other: آخر
+      others: الآخرين
+      by: بواسطة
+      no_articles: لا توجد مقالات
+    footer:
+      made_with: صنع بـ
+    header:
+      go_to_homepage: الموقع الإلكتروني
+      appearance:
+        system: النظام
+        light: فاتح
+        dark: مظلم
+      featured_articles: المقالات المميزة
+      uncategorized: غير مصنف
+    404:
+      title: لم يتم العثور على الصفحة
+      description: لم نتمكن من العثور على الصفحة التي تبحث عنها.
+      back_to_home: الذهاب إلى الصفحة الرئيسية
+  slack_unfurl:
+    fields:
+      name: الاسم
+      email: البريد الإلكتروني
+      phone_number: هاتف
+      company_name: الشركة
+      inbox_name: صندوق الوارد
+      inbox_type: نوع صندوق الوارد
+    button: فتح المحادثة
+  time_units:
+    days:
+      zero: "%{count} يوم"
+      one: "%{count} يوم"
+      two: "%{count} يوم"
+      few: "%{count} أيام"
+      many: "%{count} أيام"
+      other: "%{count} يوم"
+    hours:
+      zero: "%{count} ساعة"
+      one: "%{count} ساعة"
+      two: "%{count} ساعات"
+      few: "%{count} ساعات"
+      many: "%{count} ساعة"
+      other: "%{count} ساعة"
+    minutes:
+      zero: "%{count} دقيقة"
+      one: "%{count} دقيقة"
+      two: "%{count} دقائق"
+      few: "%{count} دقائق"
+      many: "%{count} دقيقة"
+      other: "%{count} دقيقة"
+    seconds:
+      zero: "%{count} ثانية"
+      one: "%{count} ثانية"
+      two: "%{count} ثواني"
+      few: "%{count} ثواني"
+      many: "%{count} ثانية"
+      other: "%{count} ثانية"

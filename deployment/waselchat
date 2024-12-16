@@ -1,0 +1,6 @@
+# give waselchat user permission to start/stop/restart waselchat systemd service
+
+%waselchat ALL=NOPASSWD: /bin/systemctl start waselchat.target
+%waselchat ALL=NOPASSWD: /bin/systemctl stop waselchat.target
+%waselchat ALL=NOPASSWD: /bin/systemctl restart waselchat.target
+%waselchat ALL=NOPASSWD: /usr/local/bin/cwctl

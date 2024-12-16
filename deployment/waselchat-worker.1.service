@@ -1,0 +1,25 @@
+[Unit]
+Requires=network.target
+PartOf=waselchat.target
+
+[Service]
+Type=simple
+User=waselchat
+WorkingDirectory=/home/waselchat/waselchat
+
+ExecStart=/bin/bash -lc 'dotenv bundle exec sidekiq -C config/sidekiq.yml'
+
+Restart=always
+RestartSec=1
+TimeoutStopSec=30
+KillMode=mixed
+StandardInput=null
+SyslogIdentifier=%p
+
+Environment="PATH=/home/waselchat/.rvm/gems/ruby-3.3.3/bin:/home/waselchat/.rvm/gems/ruby-3.3.3@global/bin:/home/waselchat/.rvm/rubies/ruby-3.3.3/bin:/home/waselchat/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/waselchat/.rvm/bin:/home/waselchat/.rvm/bin"
+Environment="PORT=3000"
+Environment="RAILS_ENV=production"
+Environment="NODE_ENV=production"
+Environment="RAILS_LOG_TO_STDOUT=true"
+Environment="GEM_HOME=/home/waselchat/.rvm/gems/ruby-3.3.3"
+Environment="GEM_PATH=/home/waselchat/.rvm/gems/ruby-3.3.3:/home/waselchat/.rvm/gems/ruby-3.3.3@global"
