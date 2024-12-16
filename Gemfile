@@ -48,7 +48,7 @@ gem 'csv-safe'
 gem 'aws-sdk-s3', require: false
 # original gem isn't maintained actively
 # we wanted updated version of faraday which is a dependency for slack-ruby-client
-gem 'azure-storage-blob', git: 'https://github.com/waselchat/azure-storage-ruby', branch: 'waselchat', require: false
+gem 'azure-storage-blob', git: 'https://github.com/bahaou/azure-storage-ruby', branch: 'waselchat', require: false
 gem 'google-cloud-storage', require: false
 gem 'image_processing'
 
@@ -70,7 +70,7 @@ gem 'barnes'
 
 ##--- gems for authentication & authorization ---##
 gem 'devise', '>= 4.9.4'
-gem 'devise-secure_password', git: 'https://github.com/waselchat/devise-secure_password', branch: 'waselchat'
+gem 'devise-secure_password', git: 'https://github.com/baahou/devise-secure_password', branch: 'waselchat'
 gem 'devise_token_auth', '>= 1.2.3'
 # authorization
 gem 'jwt'
@@ -140,7 +140,7 @@ gem 'email_reply_trimmer'
 
 # TODO: we might have to fork this gem since 0.3.1 has hard depency on nokogir 1.10.
 # and this gem hasn't been updated for a while.
-gem 'html2text', git: 'https://github.com/waselchat/html2text_ruby', branch: 'waselchat'
+gem 'html2text', git: 'https://github.com/bahaou/html2text_ruby', branch: 'waselchat'
 
 # to calculate working hours
 gem 'working_hours'
